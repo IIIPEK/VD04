@@ -1,0 +1,24 @@
+{
+    "company": "Мой сайт",
+    "address": "г. Москва, ул. Примерная, д. 10, офис 5",
+    "phone": "+7 (999) 123-45-67",
+    "email": "contact@moysait.ru",
+    "working_hours": "Пн-Пт: 9:00 - 18:00, Сб-Вс: выходной",
+    "social_media": [
+        {
+            "name": "ВКонтакте",
+            "url": "https://vk.com/moysait",
+            "icon": "bi bi-vk"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/moysait",
+            "icon": "bi bi-twitter"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://instagram.com/moysait",
+            "icon": "bi bi-instagram"
+        }
+    ]
+}
