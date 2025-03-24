@@ -10,7 +10,8 @@ def load_json(filename='data/posts.json'):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    home = load_json(filename='data/home.json')
+    return render_template('index.html', home=home)
 
 @app.route('/blog/')
 def blog():

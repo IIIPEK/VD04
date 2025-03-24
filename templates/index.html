@@ -4,9 +4,23 @@
 
 {% block content %}
 <main class="container my-5">
-    <section class="mb-5 text-center" id="mainblock">
-        <h2>Добро пожаловать!</h2>
-        <p>Это мой сайт на Flask.</p>
-    </section>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">{{ home.title }}</h1>
+        <p class="text-center text-muted mb-4">{{ home.greeting }}</p>
+        <p class="lead text-center mb-5">{{ home.description }}</p>
+
+        <div class="row">
+            {% for feature in home.features %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">{{ feature.title }}</h3>
+                            <p class="card-text">{{ feature.text }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </main>
 {% endblock %}
